@@ -1,13 +1,10 @@
-# easypool
-easypool
+package easypool
 
-### install
-``` 
-go get github.com/dollarkillerx/easypool
-```
+import (
+	"fmt"
+	"testing"
+)
 
-### easy
-```go
 func TestPool(t *testing.T) {
 	task := &testItem{
 		name: "Hello Rust",
@@ -28,4 +25,3 @@ type testItem struct {
 	name string
 	Resp chan string
 }
-```
